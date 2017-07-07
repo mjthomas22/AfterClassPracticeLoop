@@ -11,135 +11,174 @@ namespace Afterclasspractice
         static void Main(string[] args)
         {
 
-            //Write Hello World ten times
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("Hello World");
-            }
-
-            for (int i = 0; i <= 100; i++)
-            {
-                Console.WriteLine(i);
-            }
-
-            string family = ("Mike, Jennarae, Damon, Kaileigh  ");
-            //for (int i = 0; i < family.Length; i++)
+            ////Write Hello World ten times
+            //for (int i = 0; i < 10; i++)
             //{
-            //    Console.Write(family[i]);
+            //    Console.WriteLine("Hello World");
             //}
 
-            foreach (char word in family)
-            {
-                Console.WriteLine(family);
-            }
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
-            Console.WriteLine("Please enter a word or phrase");
-            string phrase = Console.ReadLine();
-            int vowels = 0;
-            foreach (char letter in phrase.ToLower())
-            {
-                if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
-                {
-                    vowels += 1;
-                }
-            }
-            Console.WriteLine(vowels);
+            //string family = ("Mike, Jennarae, Damon, Kaileigh  ");
+            ////for (int i = 0; i < family.Length; i++)
+            ////{
+            ////    Console.Write(family[i]);
+            ////}
 
+            //foreach (char word in family)
+            //{
+            //    Console.WriteLine(family);
+            //}
 
-            Console.WriteLine("Pick a number");
-            int number = int.Parse(Console.ReadLine());
-            Console.WriteLine("How many times do you want this repeated");
-            int repeat = int.Parse(Console.ReadLine());
-
-            for (int i = 1; i <= repeat; i++)
-            {
-                Console.WriteLine(number);
-            }
-
-            //Write a program that takes your favorite foods and prints them out one at a time.(foreach loop)
-            string[] favoriteFoods = { "General Tso's", "Steak", "Pizza", "Burgers" };
-            foreach (string food in favoriteFoods)
-            {
-
-                Console.WriteLine(food);
-            }
-
-            //Create an array of lucky number.Using foreach loop print the following
-            //          Your Lucky Number is: 3
-
-            Console.WriteLine("Find out your lucky numbers! Hit enter!");
-            Console.ReadLine();
-            int[] luckyNumbers = { 5, 12, 21, 9, 35 };
-            foreach (int number1 in luckyNumbers)
-            {
-                Console.WriteLine("Your Lucky Number is: {0}", number1);
-            }
+            //Console.WriteLine("Please enter a word or phrase");
+            //string phrase = Console.ReadLine();
+            //int vowels = 0;
+            //foreach (char letter in phrase.ToLower())
+            //{
+            //    if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+            //    {
+            //        vowels += 1;
+            //    }
+            //}
+            //Console.WriteLine(vowels);
 
 
+            //Console.WriteLine("Pick a number");
+            //int number = int.Parse(Console.ReadLine());
+            //Console.WriteLine("How many times do you want this repeated");
+            //int repeat = int.Parse(Console.ReadLine());
 
-            /*
-             * Ask the user if they would like to check the patient in for their appointment
-             * Using while loop run the following if the users answer is not yes
-             * Print "PATIENT CHECK IN SYSTEM
-             * Ask the iser for the clients full name
-             * clients 6 digit patient ID
-             * clients appointment time
-             * Ask the user if they would like to check the patient in*/
-            Console.WriteLine("Are you ready to check in for your appointment?");
-            string readyCheck = Console.ReadLine().ToLower();
+            //for (int i = 1; i <= repeat; i++)
+            //{
+            //    Console.WriteLine(number);
+            //}
 
-            while (readyCheck == "yes")
-            {
-                Console.WriteLine("PATIENT CHECK IN SYSTEM");
-                Console.WriteLine("Please enter your full name.");
-                string patientsName = Console.ReadLine();
-                Console.WriteLine("Please enter your 6 digit patient ID#.");
-                int patientsIDNumber = int.Parse(Console.ReadLine());
-                Console.WriteLine("Please enter you appointment time.");
-                int patientsTime = int.Parse(Console.ReadLine());
-                Console.WriteLine("Thank you for checking in!");
-                Console.WriteLine("Are you ready to check in for your appointment?");
-                readyCheck = Console.ReadLine().ToLower();
-            }
+            ////Write a program that takes your favorite foods and prints them out one at a time.(foreach loop)
+            //string[] favoriteFoods = { "General Tso's", "Steak", "Pizza", "Burgers" };
+            //foreach (string food in favoriteFoods)
+            //{
+
+            //    Console.WriteLine(food);
+            //}
+
+            ////Create an array of lucky number.Using foreach loop print the following
+            ////          Your Lucky Number is: 3
+
+            //Console.WriteLine("Find out your lucky numbers! Hit enter!");
+            //Console.ReadLine();
+            //int[] luckyNumbers = { 5, 12, 21, 9, 35 };
+            //foreach (int number1 in luckyNumbers)
+            //{
+            //    Console.WriteLine("Your Lucky Number is: {0}", number1);
+            //}
 
 
 
+            ///*
+            // * Ask the user if they would like to check the patient in for their appointment
+            // * Using while loop run the following if the users answer is not yes
+            // * Print "PATIENT CHECK IN SYSTEM
+            // * Ask the iser for the clients full name
+            // * clients 6 digit patient ID
+            // * clients appointment time
+            // * Ask the user if they would like to check the patient in*/
+            //Console.WriteLine("Are you ready to check in for your appointment?");
+            //string readyCheck = Console.ReadLine().ToLower();
 
-            //Print a multiplication table using nested loops
-
-            for (int rows = 1; rows <= 5; rows++)
-            {
-                for (int Columns = 1; Columns <= 5; Columns++)
-                {
-                    Console.Write(Columns * rows + "\t");
-                }
-                Console.WriteLine();
-            }
-
-
-            //Other way of doing it
-            int multNum = 1;
-            for (int i = 1; i <= 5; i++)
-            {
-                for (int j = 1; j <= 5; j++)
-                {
-                    Console.Write(multNum * j + " ");
-
-                }
-                multNum += 1;
-                Console.WriteLine();
-            }
+            //while (readyCheck == "yes")
+            //{
+            //    Console.WriteLine("PATIENT CHECK IN SYSTEM");
+            //    Console.WriteLine("Please enter your full name.");
+            //    string patientsName = Console.ReadLine();
+            //    Console.WriteLine("Please enter your 6 digit patient ID#.");
+            //    int patientsIDNumber = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Please enter you appointment time.");
+            //    int patientsTime = int.Parse(Console.ReadLine());
+            //    Console.WriteLine("Thank you for checking in!");
+            //    Console.WriteLine("Are you ready to check in for your appointment?");
+            //    readyCheck = Console.ReadLine().ToLower();
+            //}
 
 
 
 
-            //Create an array of your favorite movies, print out each movie unless the movie starts with a vowel Hint research .startsWith()
+            ////Print a multiplication table using nested loops
+
+            //for (int rows = 1; rows <= 5; rows++)
+            //{
+            //    for (int Columns = 1; Columns <= 5; Columns++)
+            //    {
+            //        Console.Write(Columns * rows + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            ////Other way of doing it
+            //int multNum = 1;
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    for (int j = 1; j <= 5; j++)
+            //    {
+            //        Console.Write(multNum * j + " ");
+
+            //    }
+            //    multNum += 1;
+            //    Console.WriteLine();
+            //}
+
+
+
+
+            ////Create an array of your favorite movies, print out each movie unless the movie starts with a vowel Hint research .startsWith()
 
             //string[] favoriteMovies = { "Anchorman", "BraveHeart", "Shawshank Redemtion", "The Jerk" };
+            //foreach(string movie in favoriteMovies)
+            //{
+            //    if(movie.StartsWith("A"))
+            //    {
+            //        continue;
+            //    }
+            //    if (movie.StartsWith("E"))
+            //    {
+            //        continue;
+            //    }
+            //    if (movie.StartsWith("I"))
+            //    {
+            //        continue;
+            //    }
+            //    if (movie.StartsWith("U"))
+            //    {
+            //        continue;
+            //    }
+            //    if (movie.StartsWith("O"))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(movie);
+            //    }
+
+            //}
 
 
             // Write a console app that asks the user for an integer if disible by 3 then write you won if not you lost keep asking until they win
 
+            Console.WriteLine("Please enter a number");
+            int usersNumber = int.Parse(Console.ReadLine());
+            
+            while (usersNumber%3 != 0)
+            {
+                Console.WriteLine("You Lost!\n");
+                Console.WriteLine("Please enter another number");
+                usersNumber = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("You Won!");
 
 
 
