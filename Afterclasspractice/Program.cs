@@ -105,20 +105,25 @@ namespace Afterclasspractice
 
 
 
-            //Print a multiplication table using nested loops
+            ////Print a multiplication table using nested loops
 
-            for (int rows = 1; rows <= 5; rows++)
-            {
-                for (int Columns = 1; Columns <= rows; Columns++)
-                {
-                    Console.Write(Columns);
-                }
-                Console.WriteLine();
-            }
+            //for (int rows = 1; rows <= 5; rows++)
+            //{
+            //    for (int Columns = 1; Columns <= rows; Columns++)
+            //    {
+            //        Console.Write(Columns);
+            //    }
+            //    Console.WriteLine();
+            //}
+
 
 
 
             //Create an array of your favorite movies, print out each movie unless the movie starts with a vowel Hint research .startsWith()
+
+            string[] favoriteMovies = { "Anchorman", "BraveHeart", "Shawshank Redemtion", "The Jerk" };
+          
+
             // Write a console app that asks the user for an integer if disible by 3 then write you won if not you lost keep asking until they win
 
 
